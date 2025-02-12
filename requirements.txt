@@ -1,0 +1,4 @@
+flask
+google-generativeai
+clarifai_grpc
+AIzaSyAJIzk6w2Cmux35CpXFj7O5pRU9nB-KkuM
