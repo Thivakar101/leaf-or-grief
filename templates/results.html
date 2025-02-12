@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Light Theme (Default) */
+        /* Dark Theme */
         body {
-            background-color: #ffffff;
-            color: #1a3c34;
+            background-color: #0d1a16;
+            color: #8aff8a;
             font-family: 'Press Start 2P', cursive;
             display: flex;
             justify-content: center;
@@ -20,10 +20,10 @@
             transition: all 0.3s ease;
         }
 
-        /* Dark Theme */
-        .dark-theme {
-            background-color: #0d1a16;
-            color: #8aff8a;
+        /* Light Theme */
+        .light-theme {
+            background-color: #ffffff;
+            color: #1a3c34;
         }
 
         .brand-name {
@@ -53,7 +53,7 @@
         }
 
         h1 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             text-transform: uppercase;
@@ -109,14 +109,22 @@
         #theme-toggle-btn:hover {
             background-color: #2b7f81;
         }
+
     </style>
 </head>
-<body>
+<body class="dark-theme">
     <div class="brand-name">🌿 Leaf or Grief</div>
     
     <div class="container">
         <h1>Analysis Results</h1>
+        
+        <!-- Analysis Icon -->
+        <div class="icon">
+            🌿 <!-- You can swap this based on the result (leaf or grief) -->
+        </div>
+
         <p id="result-text" class="text-lg"></p>
+
         <div class="mt-6">
             <a href="/" class="btn">Analyze Another Image</a>
         </div>
@@ -125,7 +133,7 @@
     <button class="btn" id="theme-toggle-btn" onclick="toggleTheme()">Theme</button>
 
     <script>
-        const responseText = `{{ gemini_response }}`;
+        const responseText = {{ gemini_response }}; // Replace with actual response
         const resultTextDiv = document.getElementById('result-text');
 
         function typeText(text, element) {
@@ -145,7 +153,11 @@
 
         function toggleTheme() {
             document.body.classList.toggle("dark-theme");
+            document.body.classList.toggle("light-theme");
         }
+
+        // For demonstration, set the plant's health to a random number (you can replace this with the actual health score)
+        const plantHealth = Math.floor(Math.random() * 100);  // Replace with actual health data
 
         typeText(responseText, resultTextDiv);
     </script>
