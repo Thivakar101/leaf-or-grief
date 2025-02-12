@@ -4,97 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf or Grief</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Light Theme (Default) */
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+            color: #1a3c34;
+            font-family: 'Press Start 2P', cursive;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             height: 100vh;
-            text-align: center;
+            text-align: left;
+            padding-left: 2rem;
+            padding-top: 3rem;
+            transition: all 0.3s ease;
         }
+
+        /* Dark Theme */
+        .dark-theme {
+            background: #0d1a16;
+            color: #8aff8a;
+        }
+
         .brand-name {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
+            color: #38a3a5;
             position: absolute;
             top: 20px;
-            left: 20px;
+            left: 2rem;
+            text-transform: uppercase;
         }
+
         .container {
-            background: #111;
+            background: rgba(240, 240, 240, 0.9);
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-            max-width: 600px;
-            width: 90%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            margin-top: 5rem;
+            border: 2px solid #38a3a5;
         }
+
+        /* Dark theme container */
+        .dark-theme .container {
+            background: rgba(34, 34, 34, 0.9);
+            border-color: #58a6a6;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
         .btn {
-            background: #fff;
-            color: #000;
+            background: #38a3a5;
+            color: #ffffff;
             padding: 10px 20px;
             border-radius: 5px;
-            transition: 0.3s;
-            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
         }
+
         .btn:hover {
-            background: #ccc;
+            background: #2b7f81;
+            transform: scale(1.05);
         }
+
         .drag-drop-area {
-            border: 2px dashed #fff;
+            border: 2px dashed #38a3a5;
             padding: 2rem;
             text-align: center;
             cursor: pointer;
-            position: relative;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
         }
+
+        .drag-drop-area:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .dark-theme .drag-drop-area {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
         #image-preview {
             max-width: 100%;
             max-height: 100%;
             display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+            border-radius: 5px;
         }
+
+        #theme-toggle-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #38a3a5;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+
+        #theme-toggle-btn:hover {
+            background-color: #2b7f81;
+        }
+
         .video-container {
             display: flex;
             justify-content: center;
             margin-top: 1rem;
+            position: absolute;
+            top: 5rem;
+            right: 2rem;
         }
+
         video {
-            border-radius: 10px;
+            border-radius: 5px;
             max-width: 100%;
             display: none;
+            box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
         }
     </style>
 </head>
 <body>
-    <div class="brand-name">Leaf or Grief</div>
+    <div class="brand-name">
+        <span class="leaf-icon">🌿</span> Leaf or Grief
+    </div>
     <div class="container">
-        <h1 class="text-3xl font-bold mb-4">Upload Image</h1>
+        <h1>Upload Your Plant Image</h1>
         <form id="upload-form" method="POST" action="/process-image" enctype="multipart/form-data">
-            <div class="drag-drop-area rounded-lg w-full h-64 flex items-center justify-center text-lg cursor-pointer" id="drag-drop-area">
-                Drag & Drop your image here
+            <div class="drag-drop-area" id="drag-drop-area">
+                Drag & Drop your image here... or click
                 <img id="image-preview" src="" alt="Image Preview">
             </div>
-            <span class="btn mt-3 cursor-pointer" id="choose-file-label" onclick="document.getElementById('file-input').click();">Choose File</span>
             <input type="file" id="file-input" name="image" accept="image/*" onchange="previewImage(event)" required class="hidden">
-            <div class="flex space-x-2 mt-3">
+            
+            <div class="btn-container">
                 <button type="button" class="btn" onclick="openCamera()">Use Camera</button>
-                <button type="button" class="btn" onclick="switchCamera()">Switch Camera</button>
+                <button type="button" class="btn" onclick="switchCamera()">Switch</button>
                 <button type="button" class="btn" onclick="captureImage()">Capture</button>
             </div>
+
             <button type="submit" class="btn mt-3">Analyze</button>
-            <div class="video-container">
-                <video id="camera-stream" autoplay playsinline></video>
-            </div>
         </form>
     </div>
+    <button class="btn" id="theme-toggle-btn" onclick="toggleTheme()">Theme</button>
+
+    <div class="video-container">
+        <video id="camera-stream" autoplay playsinline></video>
+    </div>
+
     <script>
         let currentStream = null;
         let usingFrontCamera = false;
@@ -145,11 +220,13 @@
                     const preview = document.getElementById("image-preview");
                     preview.src = e.target.result;
                     preview.style.display = "block";
-                    document.getElementById("drag-drop-area").innerText = "";
-                    document.getElementById("drag-drop-area").appendChild(preview);
                 };
                 reader.readAsDataURL(file);
             }
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
         }
     </script>
 </body>

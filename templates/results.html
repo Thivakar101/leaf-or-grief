@@ -4,65 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf or Grief - Analysis Results</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Light Theme (Default) */
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #1a3c34;
+            font-family: 'Press Start 2P', cursive;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
+            transition: all 0.3s ease;
         }
+
+        /* Dark Theme */
+        .dark-theme {
+            background-color: #0d1a16;
+            color: #8aff8a;
+        }
+
         .brand-name {
-            font-size: 3rem;
+            font-size: 1.5rem;
             font-weight: bold;
+            color: #38a3a5;
             position: absolute;
             top: 20px;
-            left: 20px;
+            left: 2rem;
+            text-transform: uppercase;
         }
+
         .container {
-            background: #111;
+            background: rgba(240, 240, 240, 0.9);
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             width: 90%;
+            transition: all 0.3s ease;
+            border: 2px solid #38a3a5;
         }
+
+        .dark-theme .container {
+            background: rgba(34, 34, 34, 0.9);
+            border-color: #58a6a6;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
         .btn {
-            background: #fff;
-            color: #000;
+            background: #38a3a5;
+            color: #ffffff;
             padding: 10px 20px;
             border-radius: 5px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
             transition: 0.3s;
-            display: inline-block;
         }
+
         .btn:hover {
-            background: #ccc;
+            background: #2b7f81;
+            transform: scale(1.05);
         }
+
         .typing {
             display: inline-block;
             white-space: pre-wrap;
-            border-right: 2px solid #fff;
+            border-right: 2px solid #38a3a5;
             animation: blink 0.7s step-end infinite;
         }
+
+        .dark-theme .typing {
+            border-right: 2px solid #8aff8a;
+        }
+
         @keyframes blink {
             50% { border-color: transparent; }
+        }
+
+        #theme-toggle-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #38a3a5;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+
+        #theme-toggle-btn:hover {
+            background-color: #2b7f81;
         }
     </style>
 </head>
 <body>
-    <div class="brand-name">Leaf or Grief</div>
+    <div class="brand-name">🌿 Leaf or Grief</div>
+    
     <div class="container">
-        <h1 class="text-3xl font-bold mb-4">Analysis Results</h1>
-        <p id="result-text" class="text-lg text-gray-300"></p>
+        <h1>Analysis Results</h1>
+        <p id="result-text" class="text-lg"></p>
         <div class="mt-6">
             <a href="/" class="btn">Analyze Another Image</a>
         </div>
     </div>
+
+    <button class="btn" id="theme-toggle-btn" onclick="toggleTheme()">Theme</button>
+
     <script>
         const responseText = `{{ gemini_response }}`;
         const resultTextDiv = document.getElementById('result-text');
@@ -76,11 +137,14 @@
                     setTimeout(type, 30);
                 } else {
                     element.classList.remove('typing');
-                   
                 }
             }
             element.classList.add('typing');
             type();
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
         }
 
         typeText(responseText, resultTextDiv);
