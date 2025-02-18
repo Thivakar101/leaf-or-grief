@@ -11,14 +11,54 @@
             background: #0d1a16;
             color: #8aff8a;
             font-family: 'Press Start 2P', cursive;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
             padding: 1rem;
             box-sizing: border-box;
             cursor: url('https://cdn.jsdelivr.net/npm/twemoji@13.1.0/72x72/1f33f.png'), auto;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0d1a16;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s;
+        }
+
+        .loading-content {
+            text-align: center;
+        }
+
+        .loading-gif {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 255, 170, 0.3);
+            border: 2px solid #58a6a6;
+        }
+
+        .loading-text {
+            color: #38a3a5;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
         }
 
         .brand-name {
@@ -31,20 +71,64 @@
             text-transform: uppercase;
         }
 
+        .main-container {
+            display: grid;
+            grid-template-columns: minmax(300px, 400px) 1fr minmax(300px, 400px);
+            gap: 2rem;
+            padding-top: 5rem;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            min-height: calc(100vh - 5rem);
+        }
+
         .container {
             background: rgba(34, 34, 34, 0.9);
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 500px;
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
-            margin-top: 3rem;
             border: 2px solid #58a6a6;
+            height: fit-content;
         }
 
-        h1 {
+        .center-content {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 0; /* Remove the negative margin */
+        height: auto; /* Adjust height to fit content */
+        width: 100%; /* Ensure it takes full width of container */
+        max-width: 800px; /* Match the max-width of the .center-gif */
+        margin: 0 auto; /
+    }
+
+    .center-gif {
+        max-width: 800px; /* Increased from 600px to 800px */
+        width: 100%; /* Keep it 100% of its container */
+        height: auto;
+        margin-bottom: 80%;
+        }
+
+        .chat-section {
+            background: rgba(34, 34, 34, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border: 2px solid #58a6a6;
+            height: fit-content;
+        }
+
+        h1, h2 {
             font-size: 1.2rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
@@ -62,6 +146,7 @@
             cursor: pointer;
             box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
             margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
@@ -85,45 +170,26 @@
             background: rgba(0, 0, 0, 0.5);
         }
 
-        #image-preview {
-            max-width: 100%;
-            max-height: 100%;
-            display: none;
+        #chat-box {
+            height: 400px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 2px dashed #38a3a5;
             border-radius: 5px;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: left;
         }
 
-        #theme-toggle-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #38a3a5;
-            padding: 10px 15px;
-            border-radius: 5px;
-            color: white;
-            font-size: 0.8rem;
-            text-transform: uppercase;
+        #chat-input {
+            width: 100%;
+            margin-top: 0.5rem;
+            padding: 0.5rem;
             border: none;
-            cursor: pointer;
-            z-index: 5;
-        }
-
-        #theme-toggle-btn:hover {
-            background-color: #2b7f81;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-            position: relative;
-        }
-
-        video {
             border-radius: 5px;
-            max-width: 100%;
-            display: none;
-            box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
-            margin-top: 1rem;
+            color: #0d1a16;
+            background: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
         }
 
         .btn-container {
@@ -134,49 +200,150 @@
             justify-content: center;
         }
 
+        .video-container {
+            margin-top: 1rem;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 5px;
+            display: none;
+            box-shadow: 0 4px 10px rgba(0, 255, 170, 0.3);
+            border: 2px solid #58a6a6;
+        }
+
+        #image-preview {
+            max-width: 100%;
+            max-height: 300px;
+            display: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .rotating-leaf {
+            animation: rotate 20s linear infinite;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 1400px) {
+            .main-container {
+                grid-template-columns: minmax(300px, 350px) 1fr minmax(300px, 350px);
+                gap: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                padding-top: 7rem;
+            }
+
+            .center-content {
+                order: -1;
+            }
+
+            .center-gif {
+                max-width: 300px;
+            }
+
+            .brand-name {
+                font-size: 1.5rem;
+            }
+        }
+
         @media (max-width: 600px) {
             .btn-container {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .video-container {
-                position: static;
+            .container, .chat-section {
+                padding: 1rem;
             }
         }
     </style>
 </head>
-<body class="dark-theme">
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <img src="https://i.pinimg.com/originals/56/a6/14/56a614261d423da1825452363174c685.gif">
+            <div class="loading-text">Loading Leaf or Grief...</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="brand-name">
         <span class="leaf-icon">🌿</span> Leaf or Grief
     </div>
-    <div class="container">
-        <h1>Upload Your Plant Image</h1>
-        <form id="upload-form" method="POST" action="/process-image" enctype="multipart/form-data">
-            <div class="drag-drop-area" id="drag-drop-area">
-                Drag & Drop your image here... or click
-                <img id="image-preview" src="" alt="Image Preview">
+    <div class="main-container">
+        <div class="container">
+            <h1>Upload Your Plant Image</h1>
+            <form id="upload-form" method="POST" action="/process-image" enctype="multipart/form-data">
+                <div class="drag-drop-area" id="drag-drop-area">
+                    Drag & Drop your image here... or click
+                    <img id="image-preview" src="" alt="Image Preview">
+                </div>
+                <input type="file" id="file-input" name="image" accept="image/*" onchange="previewImage(event)" required class="hidden">
+
+                <button type="button" class="btn" onclick="document.getElementById('file-input').click();">Select Image</button>
+
+                <div class="btn-container">
+                    <button type="button" class="btn" onclick="openCamera()">Use Camera</button>
+                    <button type="button" class="btn" onclick="switchCamera()">Switch Camera</button>
+                    <button type="button" class="btn" onclick="captureImage()">Capture</button>
+                </div>
+
+                <div class="video-container">
+                    <video id="camera-stream" autoplay playsinline></video>
+                </div>
+
+                <button type="submit" class="btn mt-3">Analyze</button>
+            </form>
+        </div>
+
+        <div class="center-content">
+            <img src="https://i.pinimg.com/originals/03/5e/5e/035e5e6d3d46592871d2c6e2ba2911b1.gif" alt="Plant Analysis Process" class="center-gif">
+           
+        </div>
+
+        <div class="chat-section">
+            <h2>Chat with LeafBot</h2>
+            <div id="chat-box"></div>
+            <div class="input-container">
+                <input type="text" id="chat-input" placeholder="Ask me something...">
+                <button class="btn" onclick="sendMessage()">Send</button>
             </div>
-            <input type="file" id="file-input" name="image" accept="image/*" onchange="previewImage(event)" required class="hidden">
-
-            <button type="button" class="btn" onclick="document.getElementById('file-input').click();">Select Image</button>
-
-            <div class="btn-container">
-                <button type="button" class="btn" onclick="openCamera()">Use Camera</button>
-                <button type="button" class="btn" onclick="switchCamera()">Switch Camera</button>
-                <button type="button" class="btn" onclick="captureImage()">Capture</button>
-            </div>
-
-            <button type="submit" class="btn mt-3">Analyze</button>
-        </form>
-    </div>
-    <button class="btn" id="theme-toggle-btn" onclick="toggleTheme()">Theme</button>
-
-    <div class="video-container">
-        <video id="camera-stream" autoplay playsinline></video>
+        </div>
     </div>
 
     <script>
+        // Loading Screen
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loading-screen');
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000); // Show loading screen for 2 seconds
+        });
+
+        // Camera Functionality
         let currentStream = null;
         let usingFrontCamera = false;
 
@@ -191,6 +358,7 @@
                 video.style.display = "block";
             } catch (error) {
                 console.error("Camera access error:", error);
+                alert("Failed to access camera. Please ensure you have given camera permissions.");
             }
         }
 
@@ -199,7 +367,7 @@
             if (currentStream) {
                 currentStream.getTracks().forEach(track => track.stop());
             }
-            openCamera();
+            await openCamera();
         }
 
         async function captureImage() {
@@ -218,6 +386,7 @@
             });
         }
 
+        // Image Preview
         function previewImage(event) {
             const file = event.target.files[0];
             if (file) {
@@ -231,10 +400,60 @@
             }
         }
 
-        function toggleTheme() {
-            document.body.classList.toggle("dark-theme");
-            document.body.classList.toggle("light-theme");
+        // Chat Functionality
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value;
+            const chatBox = document.getElementById('chat-box');
+
+            if (!message.trim()) return;
+
+            chatBox.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
+            input.value = '';
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message })
+                });
+                const data = await response.json();
+                chatBox.innerHTML += `<div><strong>Bot:</strong> ${data.response}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            } catch (error) {
+                console.error('Error sending message:', error);
+                chatBox.innerHTML += `<div><strong>System:</strong> Failed to send message. Please try again.</div>`;
+            }
         }
+
+        // Enter key support for chat
+        document.getElementById('chat-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Drag and drop functionality
+        const dragDropArea = document.getElementById('drag-drop-area');
+
+        dragDropArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dragDropArea.style.background = 'rgba(0, 0, 0, 0.6)';
+        });
+
+        dragDropArea.addEventListener('dragleave', () => {
+            dragDropArea.style.background = 'rgba(0, 0, 0, 0.3)';
+        });
+
+        dragDropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dragDropArea.style.background = 'rgba(0, 0, 0, 0.3)';
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                document.getElementById('file-input').files = files;
+                previewImage({ target: { files } });
+            }
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,229 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\globals.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\wrappers.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\templating.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\environment.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PIL\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PIL\\Image.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\io.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\client.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\auth\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\auth\\credentials.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\auth\\_credentials_base.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\client_options.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\gapic_v1\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\gapic_v1\\client_info.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\client_info.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\generative_models.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\citation_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\content_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\file_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\generation_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\helper_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\model_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\permission_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\types\\safety_types.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\protos.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\ai\\generativelanguage_v1beta\\types\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\ai\\generativelanguage_v1beta\\types\\generative_service.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\proto\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\proto\\modules.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\proto\\fields.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\proto\\message.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\ai\\generativelanguage_v1beta\\types\\content.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PIL\\ImageFile.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\ai\\generativelanguage_v1beta\\types\\file.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\typing.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\timeout.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\retry\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\retry\\retry_unary.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\api_core\\retry\\retry_base.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\google\\generativeai\\string_utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\datastructures\\file_storage.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PIL\\_util.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2025 21:19:20] "GET / HTTP/1.1" 200 -
+DEBUG:PIL.Image:Importing BlpImagePlugin
+DEBUG:PIL.Image:Importing BmpImagePlugin
+DEBUG:PIL.Image:Importing BufrStubImagePlugin
+DEBUG:PIL.Image:Importing CurImagePlugin
+DEBUG:PIL.Image:Importing DcxImagePlugin
+DEBUG:PIL.Image:Importing DdsImagePlugin
+DEBUG:PIL.Image:Importing EpsImagePlugin
+DEBUG:PIL.Image:Importing FitsImagePlugin
+DEBUG:PIL.Image:Importing FitsStubImagePlugin
+DEBUG:PIL.Image:Importing FliImagePlugin
+DEBUG:PIL.Image:Importing FpxImagePlugin
+DEBUG:PIL.Image:Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing FtexImagePlugin
+DEBUG:PIL.Image:Importing GbrImagePlugin
+DEBUG:PIL.Image:Importing GifImagePlugin
+DEBUG:PIL.Image:Importing GribStubImagePlugin
+DEBUG:PIL.Image:Importing Hdf5StubImagePlugin
+DEBUG:PIL.Image:Importing IcnsImagePlugin
+DEBUG:PIL.Image:Importing IcoImagePlugin
+DEBUG:PIL.Image:Importing ImImagePlugin
+DEBUG:PIL.Image:Importing ImtImagePlugin
+DEBUG:PIL.Image:Importing IptcImagePlugin
+DEBUG:PIL.Image:Importing JpegImagePlugin
+DEBUG:PIL.Image:Importing Jpeg2KImagePlugin
+DEBUG:PIL.Image:Importing McIdasImagePlugin
+DEBUG:PIL.Image:Importing MicImagePlugin
+DEBUG:PIL.Image:Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing MpegImagePlugin
+DEBUG:PIL.Image:Importing MpoImagePlugin
+DEBUG:PIL.Image:Importing MspImagePlugin
+DEBUG:PIL.Image:Importing PalmImagePlugin
+DEBUG:PIL.Image:Importing PcdImagePlugin
+DEBUG:PIL.Image:Importing PcxImagePlugin
+DEBUG:PIL.Image:Importing PdfImagePlugin
+DEBUG:PIL.Image:Importing PixarImagePlugin
+DEBUG:PIL.Image:Importing PngImagePlugin
+DEBUG:PIL.Image:Importing PpmImagePlugin
+DEBUG:PIL.Image:Importing PsdImagePlugin
+DEBUG:PIL.Image:Importing QoiImagePlugin
+DEBUG:PIL.Image:Importing SgiImagePlugin
+DEBUG:PIL.Image:Importing SpiderImagePlugin
+DEBUG:PIL.Image:Importing SunImagePlugin
+DEBUG:PIL.Image:Importing TgaImagePlugin
+DEBUG:PIL.Image:Importing TiffImagePlugin
+DEBUG:PIL.Image:Importing WebPImagePlugin
+DEBUG:PIL.Image:Importing WmfImagePlugin
+DEBUG:PIL.Image:Importing XbmImagePlugin
+DEBUG:PIL.Image:Importing XpmImagePlugin
+DEBUG:PIL.Image:Importing XVThumbImagePlugin
+DEBUG:root:Image received with size: (210, 240)
+DEBUG:root:Gemini response: That's not a plant, my friend, that's a capybara!  It's the world's largest rodent, which explains why it looks like it ate all the houseplants.  This majestic beast can't be potted, but if you *did* try to care for one (which you absolutely shouldn't unless you're a qualified professional with appropriate permits and a sizable pond), here's what you'd need:
+
+* **Water, water everywhere:**  Think less houseplant, more hippo.  These guys are semi-aquatic and need constant access to a large body of water.  Forget the watering can, you'll need a backhoe to dig a pond.
+* **Grass, the gourmet snack:**  Capybaras are basically furry lawnmowers.  Prepare to have the greenest (or shortest) lawn on the block.  Alternatively, stock up on hay – a lot of hay.
+* **Sunshine and good times:**  They enjoy basking in the sun, possibly contemplating the meaning of existence or just how much grass they can consume in a day.
+* **Friends, the more the merrier:** Capybaras are highly social. Get ready to adopt a whole herd, because leaving this one alone would be a *capy-tragedy*.
+* **Veterinary care (the exotic kind):** Forget your local cat doctor. You'll need a vet specializing in exotic animals who can handle a rodent the size of a golden retriever.
+* **Absolutely no attempt to put it in a pot:** Seriously.  Just don't.
+
+
+In short, admire its majestic, slightly goofy face, but please leave capybara care to the professionals. They belong in the wild, not your windowsill.
+
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2025 21:19:41] "POST /process-image HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 983-883-941
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\THIVAKAR\\leaf-or-grief\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
