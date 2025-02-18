@@ -48,6 +48,3 @@ def process_image():
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-AIzaSyDNwrt9gH5iSEKJH4VY548Nr7TDIkhvPB4
-
