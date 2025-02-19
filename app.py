@@ -9,7 +9,7 @@ import html
 app = Flask(__name__)
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyCftTGruTdtI5gV-8LDT7QOHHVckDWkBQc"  # Replace with your Gemini API Key
+GEMINI_API_KEY = "apikeyyyy"  # Replace with your Gemini API Key
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Load Gemini model
