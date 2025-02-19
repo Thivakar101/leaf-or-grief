@@ -9,7 +9,7 @@ import html
 app = Flask(__name__)
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyD7Mv6sYR00O4v558RAXuDlZNXjXSayACY"  # Replace with your Gemini API Key
+GEMINI_API_KEY = "AIzaSyDleawqB3eYF5W2shzeusAs0mjvL1FYmdk"  # Replace with your Gemini API Key
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Load Gemini model
@@ -35,7 +35,7 @@ def process_image():
 
         # Send to Gemini Vision API
         gemini_response = model.generate_content(
-            ["Analyze the plant in this image and provide the species, health status, and care recommendations in a humorous way, all in points and in 60 words. Don't use ('') in your response.", image_pil]
+            ["Analyze the plant in this image and provide the species, health status, and care recommendations in a humorous way, all in points and in 60 words. Don't use (') in your response .after each topic leaveee someee lineeeee", image_pil]
         )
 
         # Check for a valid response
